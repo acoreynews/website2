@@ -24,6 +24,13 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+    
+
+    <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
     
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,9 +39,10 @@
 </head>
 <body>
 
-    <header class="main_nav">
+    <header class="main_nav blue">
         <div class="container">
             <div class="twelve columns">
+                <div class="logo"><a href="#">Alex Corey</a></div>
             </div>
         </div>
     </header>
@@ -42,39 +50,116 @@
 <div class="container main">
     <div class="row">
         <div class="four columns portfolio"></div> 
-        <img src="images/ENS_LogoWebsite.jpg"/>
+        <a class="image-link" href="images/ENS_LogoWebsite.jpg"><img src="images/ENS_LogoWebsite.jpg"/></a>
         <div class="four columns portfolio"></div> 
-        <img src="images/fire1.JPG"/>
+        <a class="image-link" href="images/fire1.jpg"><img src="images/fire1.JPG"/></a>
         <div class="four columns portfolio"></div> 
-    </div>
-    <div class="row">
-        <img src="images/migrahack2.jpg"/>
         <div class="four columns portfolio"></div> 
-        <img src="images/migrahack9.jpg"/>
+        <a class="image-link" href="images/migrahack3.jpg"><img src="images/migrahack3.jpg"/></a>
         <div class="four columns portfolio"></div>
-        <img src="images/NV_LVRJ.jpg"/>
+    </div>
+    
+    <div class="row" style="margin-bottom: 10%;">
+        <a class="image-link" href="images/migrahack2.jpg"><img src="images/migrahack2.jpg"/></a>
+        <div class="four columns portfolio"></div> 
+        <a class="image-link" href="images/migrahack9.jpg"><img src="images/migrahack9.jpg"/></a>
+        <div class="four columns portfolio"></div>
+        <a class="image-link" href="images/NV_LVRJ.jpg"><img src="images/NV_LVRJ.jpg"/></a>
         <div class="four columns portfolio"></div> 
     </div>
+    
+    
+    
+    
 </div> <!--container ends-->
     
+    <section class="section-form"
+                    <div class="row">
+                        <h2>Contact me</h2>
+                    </div>
+                    <div class="row">
+                        <form method="post" action="#" class="contact-form">
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="name">Your name</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="email" name="email" id="name" placeholder="Your email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="find-us">How did you find this site?</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <select name="find-us" id="find-us">
+                                        <option value="friends">Twitter</option>
+                                        <option value="search" selected>Search engine</option>
+                                        <option value="ad">LinkedIn</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label>Newsletter</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="checkbox" name="news" id="news" checked> Yes, please.
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label>Leave me a note</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                   <textarea name="message" placeholder="Your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label>&nbsp;</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                   <input type="submit" value="Send it!"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </section>     
     
-<div class"row blue">
+    
+<div class="row blue">
     <div class="container">
         <div class="four columns">
-            <img class="avatar" src="images/bio.jpg"/>
+            <a class="image-link" href="images/bio.jpg"><img class="avatar" src="images/bio.jpg"/></a>
         </div>
         <div class="eight columns">
-            <h2>About Alex Corey</h2>
-            <p>I'm a recent Journalism/Spanish Language Journalism graduate learning how to build news apps.</p>
+            <h2 class="bio">About Alex Corey</h2>
+            <p class ="bio">I'm a recent Journalism/Spanish Language Journalism graduate learning how to build news apps.</p>
         </div>
     </div>
 </div> <!-- End blue row--->
 
 <footer>
     <div class="container">
-        <div class="row twelve columns"></div>
         <div class="row twelve columns">
-            <p>&copy; 2015 Alex Corey. All Rights Reserved. Photo by Pinar Istek.</p>
+            <ul class="social">
+                <li class="twitter"><a href="https://twitter.com/acoreynews" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/alexander-corey-789a5659" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            </ul>
+        </div>
+        <div class="row twelve columns">
+            <p class="copyright">&copy; 2015 Alex Corey. All Rights Reserved. Profile picture by <a class="photogLink" href="https://twitter.com/pinaristek" target="_blank">Pinar Istek</a></p>
         </div>
     </div>    
 </footer>
@@ -82,6 +167,36 @@
     
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript">
+    /* $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+}); */
+        
+        $('.image-link').magnificPopup({
+  type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});
+    </script>
 </body>
 </html>
+
+<!---
 
